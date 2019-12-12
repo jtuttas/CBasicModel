@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CBasicModel", "CBasicModel\CBasicModel.csproj", "{FF2935D1-5569-401A-8218-2C1240C9ED5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF2935D1-5569-401A-8218-2C1240C9ED5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF2935D1-5569-401A-8218-2C1240C9ED5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF2935D1-5569-401A-8218-2C1240C9ED5B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF2935D1-5569-401A-8218-2C1240C9ED5B}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C82FB4AE-23A0-45CA-895A-6BF5802B1691}
+	EndGlobalSection
+EndGlobal
