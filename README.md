@@ -5,11 +5,13 @@ Ein Virtuelles Prozessmodell, welches angeschlossen werden kann an.
 - FluidSim
 
 ![Screenshot](Dok/screen1.png)
-##Download
+## Download
 You can download the Application here [setup.exe](https://service.joerg-tuttas.de/CBasicModel/setup.exe)
+
 ## I/O Belegung
 ### Modbus Belegung 
 Die Eingänge sind hier mit (Ausgangs-) Coils verbunden, da diese nur über Modbus zu lesen sind.
+
 | Signal  | Belegung  | Kommentar  |
 |:-:|---|---|
 | E_Stop  | %QX4.0  | neg. Logik  |
@@ -27,3 +29,4 @@ Die Eingänge sind hier mit (Ausgangs-) Coils verbunden, da diese nur über Modb
 | A_Motor_rechts  | %QX5.5  |   |
 | A_Motor_speed  | %QX5.0  | Motor bewegt sich mit doppelter Geschwindigkeit  |
 ## Video
+[![Video](http://img.youtube.com/vi/2EED5cE1UME/0.jpg)](http://www.youtube.com/watch?v=2EED5cE1UME)
