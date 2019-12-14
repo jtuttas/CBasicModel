@@ -220,16 +220,20 @@ void PROGRAM0_init__(PROGRAM0 *data__, BOOL retain) {
   __INIT_VAR(data__->A_MOTOR_LINKS,__BOOL_LITERAL(FALSE),retain)
   __INIT_VAR(data__->A_MOTOR_RECHTS,__BOOL_LITERAL(FALSE),retain)
   __INIT_VAR(data__->A_MOTOR_MAXSPEED,__BOOL_LITERAL(FALSE),retain)
+  __INIT_VAR(data__->NOT25_OUT,__BOOL_LITERAL(FALSE),retain)
+  __INIT_VAR(data__->NOT26_OUT,__BOOL_LITERAL(FALSE),retain)
 }
 
 // Code part
 void PROGRAM0_body__(PROGRAM0 *data__) {
   // Initialise TEMP variables
 
-  __SET_VAR(data__->,PI_LED_ROT,,__GET_VAR(data__->E_START,));
-  __SET_VAR(data__->,A_MOTOR_LINKS,,__GET_VAR(data__->E_START,));
-  __SET_VAR(data__->,PI_LED_GRUEN,,__GET_VAR(data__->E_RESET,));
-  __SET_VAR(data__->,A_MOTOR_RECHTS,,__GET_VAR(data__->E_RESET,));
+  __SET_VAR(data__->,PI_LED_ROT,,__GET_VAR(data__->E_LINKS,));
+  __SET_VAR(data__->,PI_LED_GRUEN,,__GET_VAR(data__->E_RECHTS,));
+  __SET_VAR(data__->,NOT25_OUT,,!(__GET_VAR(data__->PI_TASTER_LINKS,)));
+  __SET_VAR(data__->,A_MOTOR_LINKS,,__GET_VAR(data__->NOT25_OUT,));
+  __SET_VAR(data__->,NOT26_OUT,,!(__GET_VAR(data__->PI_TASTER_RECHTS,)));
+  __SET_VAR(data__->,A_MOTOR_RECHTS,,__GET_VAR(data__->NOT26_OUT,));
 
   goto __end;
 

@@ -26,7 +26,7 @@ void __publish_debug (void){}
 #include <stdio.h>
 
 #ifndef TARGET_ONLINE_DEBUG_DISABLE
-#define BUFFER_SIZE 19
+#define BUFFER_SIZE 21
 
 /* Atomically accessed variable for buffer state */
 #define BUFFER_FREE 0
@@ -75,7 +75,9 @@ static dbgvardsc_t dbgvardsc[] = {
 {&(RES0__INSTANCE0.A_H4), BOOL_ENUM},
 {&(RES0__INSTANCE0.A_MOTOR_LINKS), BOOL_ENUM},
 {&(RES0__INSTANCE0.A_MOTOR_RECHTS), BOOL_ENUM},
-{&(RES0__INSTANCE0.A_MOTOR_MAXSPEED), BOOL_ENUM}
+{&(RES0__INSTANCE0.A_MOTOR_MAXSPEED), BOOL_ENUM},
+{&(RES0__INSTANCE0.NOT25_OUT), BOOL_ENUM},
+{&(RES0__INSTANCE0.NOT26_OUT), BOOL_ENUM}
 };
 
 typedef void(*__for_each_variable_do_fp)(dbgvardsc_t*);

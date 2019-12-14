@@ -20,11 +20,17 @@ PROGRAM program0
     A_Motor_rechts AT %QX5.5 : BOOL;
     A_Motor_MaxSpeed AT %QX5.6 : BOOL;
   END_VAR
+  VAR
+    NOT25_OUT : BOOL;
+    NOT26_OUT : BOOL;
+  END_VAR
 
-  PI_LED_rot := E_Start;
-  A_Motor_links := E_Start;
-  PI_LED_gruen := E_Reset;
-  A_Motor_rechts := E_Reset;
+  PI_LED_rot := E_Links;
+  PI_LED_gruen := E_Rechts;
+  NOT25_OUT := NOT(PI_Taster_Links);
+  A_Motor_links := NOT25_OUT;
+  NOT26_OUT := NOT(PI_Taster_Rechts);
+  A_Motor_rechts := NOT26_OUT;
 END_PROGRAM
 
 

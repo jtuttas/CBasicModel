@@ -72,7 +72,7 @@ namespace CBasicModel
                         connected = false;
                     }
                 }
-                runner.Join(500);
+                Thread.Sleep(150);                
             }
             if (listener != null) listener.lostConnection("");
             //runner.Join(100);

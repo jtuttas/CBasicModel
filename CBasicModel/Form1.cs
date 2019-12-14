@@ -135,6 +135,7 @@ namespace CBasicModel
             //Console.WriteLine("ticke");
             modell.move();
             modell.repaint();
+          
             if (!selected)
             {
                 mat.Location = new Point(modell.xPos + bg.Location.X, modell.yPos + bg.Location.Y);
@@ -246,7 +247,7 @@ namespace CBasicModel
 
                     status.Text = "Try to connect to Modbus Server!";
                     this.Update();
-                    ios = new IOServerModbus();
+                    ios = new IOServerModbus(ipadr.Text,Int32.Parse(ipPort.Text));
                     ios.setListener(this);
 
                     bool res = ios.connect();
@@ -756,6 +757,10 @@ namespace CBasicModel
             setImage(pictureBox5, pultT1Image, pultT0Image, false);
 
         }
-       
+
+        private void ipadr_Click(object sender, EventArgs e)
+        {
+            modbus.Checked = true;
+        }
     }
 }
