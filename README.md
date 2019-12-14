@@ -5,6 +5,8 @@ Ein Virtuelles Prozessmodell, welches angeschlossen werden kann an.
 - FluidSim
 
 ![Screenshot](Dok/screen1.png)
+##Download
+You can download the Application here [setup.exe](https://service.joerg-tuttas.de/CBasicModel/setup.exe)
 ## I/O Belegung
 ### Modbus Belegung 
 Die Eingänge sind hier mit (Ausgangs-) Coils verbunden, da diese nur über Modbus zu lesen sind.
