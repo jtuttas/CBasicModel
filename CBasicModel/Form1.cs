@@ -56,8 +56,8 @@ namespace CBasicModel
 
         public Form1()
         {
-            s7Image = Image.FromFile("s7panel.jpg");
             fluidImage = Image.FromFile("PanelFesto.jpg");
+            s7Image = Image.FromFile("s7panel.jpg");
             InitializeComponent();
             modell = new Modell(bg.CreateGraphics());
             sopenImage = Image.FromFile("sopen.gif");
