@@ -6,7 +6,7 @@ Ein Virtuelles Prozessmodell, welches angeschlossen werden kann an.
 
 ![Screenshot](Dok/screen1.png)
 ## I/O Belegung
-### Modbus Belegung
+### Modbus Belegung 
 Die Eingänge sind hier mit (Ausgangs-) Coils verbunden, da diese nur über Modbus zu lesen sind.
 | Signal  | Belegung  | Kommentar  |
 |:-:|---|---|
